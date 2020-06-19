@@ -1,0 +1,514 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/andreas01.css" media="screen" title="andreas01 (screen)" />
+<link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+<title>dbPTM</title>
+</head>
+
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.style16 {
+	font-size: 24px;
+	font-weight: bold;
+}
+.style17 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666666;
+	font-weight: bold;
+	font-size: 16px;
+}
+.style18 {
+	color: #999999;
+	font-size: 14px;
+	font-family: "Times New Roman", Times, serif;
+}
+.style19 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif; font-size: 13px;
+}
+.style22 {color: #FFFFFF; font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+
+
+-->
+</style>
+
+<body><div id="wrap">
+
+<?php
+//---------------------top.html--------------------------//
+include("top.html");
+?>
+
+<div id="avmenu">
+<h2 class="hide">Menu:</h2>
+<ul>
+<li><a href="index.php">Welcome!</a></li>
+<li><a href="introduction.php">Introduction</a></li>
+<li><a href="statistics.php">Data Statistics</a></li>
+<li><a href="browse.php">Browse PTM Type</a></li>
+<li><a href="advance_search.php">Search</a></li>
+<li><a href="download.php">Download</a></li>
+<li><a href="tutorial.php">Tutorial</a></li>
+<li><a href="http://dbPTM.mbc.nctu.edu.tw/1.0/">dbPTM 1.0</a></li>
+</ul>
+
+<div class="announce">
+<h3>Latest news:</h3>
+<p><strong>Jan. 20, 2008:</strong><br />
+The structural information, <font color=red>protein disorder regions</font>, will be annotated on dbPTM in Feb. 2008!</p>
+<p class="textright"><a href="news.php">Read more...</a></p>
+</div>
+
+</div>
+
+<div id="content2">
+
+<table bgcolor="#FFFFFF" width="700" border="0" cellpadding="1" cellspacing="2" align="center">
+  <tr>
+    <td>
+	<table width="700">
+      <tr>
+        <td><p><img src="images/statistics.jpg" align="top" alt="">	
+          <table width="50%" >
+            <tr>
+              <td><hr></td>
+            </tr>
+          </table></p>                    
+		  
+		  
+			<img src="images/p_01.gif"><span class="style17"> <u>The statistics of external PTM resource in dbPTM 2.0 </u></span>
+			<P align="justify" class="style18">
+			Four external biological databases related to protein post-translational modification information, Swiss-Prot, Phospho.ELM, O-GLYCBASE, and UbiProt, are integrated into the proposed resource. As shown in bellow table, release 53.0 of Swiss-Prot contributes 17,957 experimental validated PTM sites within 8,086 proteins, and 124,933 putative PTM sites (annotated as "by similarity", "potential" or "probable" in the 'MOD_RES' fields) within 29,356 proteins. The Phospho.ELM entries store information about substrate proteins with the exact positions of residues are known to be phosphorylated by cellular kinases. 13,612 experimentally verified phosphorylation sites within 4,419 proteins were obtained from Phospho.ELM version 6.0. O-GLYCBASE version 6.0 provides 242 glycoproteins containing 2,765 experimentally verified O-linked, N-linked, and C-linked glycosylation sites. However, 185 glycoproteins in O-GLYCBASE are corresponded to Swiss-Prot proteins, which have 2,353 experimentally verified glycosylation sites. Especially, a novel PTM database, UbiProt, stores 417 ubiquitylated proteins which contain 165 ubiquitylation sites.
+			</p>
+			<table align="center" width="700">
+			<tr>
+			  <td width="80" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Resource</div></td>
+			  <td width="207" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Description</div></td>
+			  <td width="95" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Version</div></td>
+			  <td width="242" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Statistics </div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+			  <td rowspan="2" bgcolor="#D0FFFF"><div align="center"><span class="style18"> <a href="http://us.expasy.org/sprot/">Swiss-Prot</a> </span></div></td>
+			  <td><span class="style18"> Experimental Post-Translational Modifications (PTMs) </span></td>
+			  <td rowspan="2"><div align="center"><span class="style18"> Release 53 </span></div></td>
+			  <td><span class="style18">17,957 PTM sites within 8,086 proteins</span></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+			  <td><span class="style18"> Putative PTMs </span></td>
+			  <td><span class="style18"> 124,933 PTM sites within 29,356 proteins </span></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> <a href="http://phospho.elm.eu.org/">Phospho.ELM</a> </span></div></td>
+			  <td><span class="style18"> Experimental phosphorylation sites </span></td>
+			  <td><div align="center"><span class="style18"> Release 6.0 </span></div></td>
+			  <td><span class="style18"> 13,612 phosphorylation sites within 4,419 proteins </span></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+			  <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> <a href="http://www.cbs.dtu.dk/databases/OGLYCBASE/">OGlycBase</a> </span></div></td>
+			  <td><span class="style18"> Experimental glycosylation sites </span></td>
+			  <td><div align="center"><span class="style18"> Release 6.0 </span></div></td>
+			  <td><span class="style18"> 2,353 PTM sites within 185 glycoproteins </span></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+			  <td><div align="center"><span class="style18"> <a href="http://www.cbs.dtu.dk/databases/OGLYCBASE/">UbiProt</a> </span></div></td>
+			  <td><span class="style18"> Ubiquitylated protein and ubiquitylation sites </span></td>
+			  <td><div align="center"><span class="style18"> Release 1.0 </span></div></td>
+			  <td><span class="style18"> 417 proteins contain 165 ubiquitylated sites </span></td>
+				</tr>
+			</table>
+			<br><br><br>
+
+			<img src="images/p_01.gif"><span class="style17"> <u>The statistics of experimental and putative PTM sites in dbPTM 2.0 </u></span>
+			<p align="justify" class="style18">
+			The statistics of the experimental and putative PTM sites from dbPTM 2.0 were shown in Table 1. The collected PTM sites from Swiss-Prot, Phospho.ELM, O-GLYCBASE and UbiProt were categorized by the PTM type, after removing the redundancy, the number of non-redundant sites in each type of PTM were calculated. There were totally 36,466 experimentally verified PTM sites in dbPTM 2.0; therein, the type with maximum number of experimental sites is phosphorylation, consisting of 22,363 sites. To provide more potential PTM information to proteins without PTM annotations, 20 types of PTM sites were fully predicted against Swiss-Prot protein sequences by the learned HMMs with the threshold of specificity 100%, predicted totally 2,860,047 sites. With various types of kinase, especially, phosphorylation contains the maximum number of predicted sites.
+			</p>
+			<table align="center" width="700">
+			<tr>
+			  <td width="107" background="images/bg_headline_td_1.gif"><div align="center" class="style22">PTM Type</div></td>
+			  <td width="245" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Substrate</div></td>
+			  <td width="135" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Number of experimental sites</div></td>
+			  <td width="137" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Number of putative sites from Swiss-Prot</div></td>
+			  <td width="137" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Number of putative sites by HMMs</div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18">N-linlked Glycosylation </span></div></td>
+			  <td><span class="style18">Asparagine and lysine</span></td>
+			  <td><div align="right"><span class="style18">3,036</span></div></td>
+			  <td><div align="right"><span class="style18">72,125</span></div></td>
+			  <td><div align="right"><span class="style18">479,955</span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+			  <td><div align="center"><span class="style18">O-linlked Glycosylation </span></div></td>
+			  <td><span class="style18">Lysine, praline, serine, threonine, and tyrosine</span></td>
+			  <td><div align="right"><span class="style18">1,896</span></div></td>
+			  <td><div align="right"><span class="style18">2,558</span></div></td>
+			  <td><div align="right"><span class="style18">386,545</span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18">C-linlked Glycosylation </span></div></td>
+			  <td><span class="style18">Tryptophane</span></td>
+			  <td><div align="right"><span class="style18">49</span></div></td>
+			  <td><div align="right"><span class="style18">31</span></div></td>
+			  <td><div align="right"><span class="style18">4,015</span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+			  <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Phosphorylation </span></div></td>
+			  <td bgcolor="#D0FFFF"><span class="style18">Serine, threonine, tyrosine, aspartate, histidine or cysteine</span></td>
+			  <td><div align="right"><span class="style18"> 22,363 </span></div></td>
+			  <td><div align="right"><span class="style18"> 27,200 </span></div></td>
+			  <td><div align="right"><span class="style18"> 1,815,472 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Acetylation </span></div></td>
+			  <td><span class="style18"> N-terminal of some residues and side chain of lysine or cysteine </span></td>
+			  <td><div align="right"><span class="style18"> 2,071 </span></div></td>
+			  <td><div align="right"><span class="style18"> 5,143 </span></div></td>
+			  <td><div align="right"><span class="style18"> 1,206 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Amidation </span></div></td>
+              <td><span class="style18"> Generally at the C-terminal of a mature active peptide after oxidative cleavage of last glycine </span></td>
+              <td><div align="right"><span class="style18"> 2,150 </span></div></td>
+              <td><div align="right"><span class="style18"> 1,117 </span></div></td>
+			  <td><div align="right"><span class="style18"> 24,352 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td><div align="center"><span class="style18"> Hydroxylation </span></div></td>
+              <td><span class="style18"> Generally of asparagine, aspartate, proline or lysine </span></td>
+              <td><div align="right"><span class="style18"> 1,033 </span></div></td>
+              <td><div align="right"><span class="style18"> 1,074 </span></div></td>
+			  <td><div align="right"><span class="style18"> 9,743 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Methyylation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Generally of N-terminal phenylalanine, side chain of lysine, arginine, histidine,  asparagine or glutamate, and C-terminal cysteine </span></td>
+              <td><div align="right"><span class="style18"> 746 </span></div></td>
+              <td><div align="right"><span class="style18"> 2,846 </span></div></td>
+			  <td><div align="right"><span class="style18"> 18,716 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Pyrrolidone Carboxylic Acid </span></div></td>
+              <td><span class="style18"> N-terminal glutamine which has formed an internal cyclic lactam </span></td>
+              <td><div align="right"><span class="style18"> 598 </span></div></td>
+              <td><div align="right"><span class="style18"> 584 </span></div></td>
+			  <td><div align="right"><span class="style18"> 12,322 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Gamma-Carboxyglutamic Acid </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> 4-carboxyglutamate </span></td>
+              <td><div align="right"><span class="style18"> 371 </span></div></td>
+              <td><div align="right"><span class="style18"> 361 </span></div></td>
+			  <td><div align="right"><span class="style18"> 1,924 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Farnesylation </span></div></td>
+              <td><span class="style18"> S-farnesyl cysteine </span></td>
+              <td><div align="right"><span class="style18"> 61 </span></div></td>
+              <td><div align="right"><span class="style18"> 216 </span></div></td>
+			  <td><div align="right"><span class="style18"> 5,349 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Myristoylation </span></div></td>
+              <td><span class="style18"> N-myristoyl glycine </span></td>
+              <td><div align="right"><span class="style18"> 108 </span></div></td>
+              <td><div align="right"><span class="style18"> 765 </span></div></td>
+			  <td><div align="right"><span class="style18"> 10,998 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Palmitoylation </span></div></td>
+              <td><span class="style18"> N-palmitoyl cysteine and S-palmitoyl cysteine </span></td>
+              <td><div align="right"><span class="style18"> 210 </span></div></td>
+              <td><div align="right"><span class="style18"> 3,582 </span></div></td>
+			  <td><div align="right"><span class="style18"> 27,841 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Geranyl-geranylation </span></div></td>
+              <td><span class="style18"> S-geranylgeranyl cysteine </span></td>
+              <td><div align="right"><span class="style18"> 47 </span></div></td>
+              <td><div align="right"><span class="style18"> 819 </span></div></td>
+			  <td><div align="right"><span class="style18"> 14,317 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> S-diacylglycerol cysteine </span></div></td>
+              <td><span class="style18"> S-diacylglycerol cysteine </span></td>
+              <td><div align="right"><span class="style18"> 36 </span></div></td>
+              <td><div align="right"><span class="style18"> 1,529 </span></div></td>
+			  <td><div align="right"><span class="style18"> 8,977 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> GPI anchoring </span></div></td>
+              <td><span class="style18"> C-terminal asparagine, asparate and serine </span></td>
+              <td><div align="right"><span class="style18"> 27 </span></div></td>
+              <td><div align="right"><span class="style18"> 681 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td><div align="center"><span class="style18"> Deamidation </span></div></td>
+              <td><span class="style18"> Deamidated asparagin and Deamidated glutamine (needs to be followed by a G) </span></td>
+              <td><div align="right"><span class="style18"> 38 </span></div></td>
+              <td><div align="right"><span class="style18"> 26 </span></div></td>
+			  <td><div align="right"><span class="style18"> 2,022 </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Sulfation </span></div></td>
+              <td><span class="style18"> serine, threonine, and tyrosine </span></td>
+              <td><div align="right"><span class="style18"> 165 </span></div></td>
+              <td><div align="right"><span class="style18"> 570 </span></div></td>
+			  <td><div align="right"><span class="style18"> 15,654 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td><div align="center"><span class="style18"> Sumoylation </span></div></td>
+              <td><span class="style18"> Glycyl lysine isopeptide (Lys-Gly)(interchain with G-Cter in SUMO) </span></td>
+              <td><div align="right"><span class="style18"> 77 </span></div></td>
+              <td><div align="right"><span class="style18"> 259 </span></div></td>
+			  <td><div align="right"><span class="style18"> 10,342 </span></div></td>
+			</tr>			
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Ubiquitylation </span></div></td>
+              <td><span class="style18"> Glycyl lysine isopeptide (Lys-Gly)(interchain with G-Cter in ubiquitin) </span></td>
+              <td><div align="right"><span class="style18"> 286 </span></div></td>
+              <td><div align="right"><span class="style18"> 516 </span></div></td>
+			  <td><div align="right"><span class="style18"> 8,865 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td><div align="center"><span class="style18"> ADP-ribosylation </span></div></td>
+              <td><span class="style18"> ADP-ribosylarginine, ADP-ribosylasparagine, ADP-ribosylcysteine, ADP-ribosylserine </span></td>
+              <td><div align="right"><span class="style18"> 3 </span></div></td>
+              <td><div align="right"><span class="style18"> 203 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Formylation </span></div></td>
+              <td><span class="style18"> Of the N-terminal methionine </span></td>
+              <td><div align="right"><span class="style18"> 28 </span></div></td>
+              <td><div align="right"><span class="style18"> 35 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td><div align="center"><span class="style18">Citrullination</span></div></td>
+              <td><span class="style18">Citrulline of arginine</span></td>
+              <td><div align="right"><span class="style18"> 27 </span></div></td>
+              <td><div align="right"><span class="style18"> 91 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>			
+			<tr bgcolor="#D0FFFF">
+              <td><div align="center"><span class="style18"> Nitration </span></div></td>
+              <td><span class="style18"> Nitrated tyrosine </span></td>
+              <td><div align="right"><span class="style18"> 47 </span></div></td>
+              <td><div align="right"><span class="style18"> 5 </span></div></td>
+			  <td><div align="right"><span class="style18"> 1,432 </span></div></td>
+			</tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Bromination </span></div></td>
+              <td><span class="style18"> 6'-bromotryptophan </span></td>
+              <td><div align="right"><span class="style18"> 18 </span></div></td>
+              <td><div align="right"><span class="style18"> 3 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> FAD </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> O-8alpha-FAD tyrosine, Pros-8alpha-FAD histidine, S-8alpha-FAD cysteine, and Tele-8alpha-FAD histidine </span></td>
+              <td><div align="right"><span class="style18"> 12 </span></div></td>
+              <td><div align="right"><span class="style18"> 116 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>			
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> S-nitrosylation </span></div></td>
+              <td><span class="style18"> S-nitrosocysteine </span></td>
+              <td><div align="right"><span class="style18"> 9 </span></div></td>
+              <td><div align="right"><span class="style18"> 93 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Others </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> - </span></td>
+              <td><div align="right"><span class="style18"> 889 </span></div></td>
+              <td><div align="right"><span class="style18"> 2,358 </span></div></td>
+			  <td><div align="right"><span class="style18"> - </span></div></td>
+			</tr>
+			<tr bgcolor="#999999">
+              <td><div align="center" class="style19"> Total </div></td>
+              <td><span class="style19"> - </span></td>
+              <td><div align="right" class="style19"> 36,466 </div></td>
+              <td><div align="right" class="style19"> 124,933 </div></td>
+			  <td><div align="right" class="style19"> 2,860,047 </div></td>
+			</tr>
+			</table>
+			<br><br><br>
+
+			<img src="images/p_01.gif"><span class="style17"> <u>The statistics of experimental PTM sites in dbPTM 1.0 and 2.0 </u></span><br><br>
+			<table align="center" width="700">
+			<tr>
+			  <td colspan="2" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Post-translational modification</div></td>
+			  <td colspan="2" background="images/bg_headline_td_1.gif"><div align="center" class="style22">No. of experimental PTM sites</div></td>
+			  </tr>
+			<tr>
+			  <td width="107" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Type</div></td>
+			  <td width="245" background="images/bg_headline_td_1.gif"><div align="center" class="style22">Substrate</div></td>
+			  <td width="135" background="images/bg_headline_td_1.gif"><div align="center" class="style22">dbPTM 1.0</div></td>
+			  <td width="137" background="images/bg_headline_td_1.gif"><div align="center" class="style22">dbPTM 2.0</div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Glycosylation </span></div></td>
+			  <td><span class="style18"> N-linlked, O-linked, and C-linked glycosylation </span></td>
+			  <td><div align="right"><span class="style18"> 4,586</span></div></td>
+			  <td><div align="right"><span class="style18"> 4,951 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+			  <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Phosphorylation </span></div></td>
+			  <td bgcolor="#D0FFFF"><span class="style18"> Experimental glycosylation sites </span></td>
+			  <td><div align="right"><span class="style18"> 3,367 </span></div></td>
+			  <td><div align="right"><span class="style18"> 22,363 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+			  <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Acetylation </span></div></td>
+			  <td><span class="style18"> N-terminal of some residues and side chain of lysine or cysteine </span></td>
+			  <td><div align="right"><span class="style18"> 1,019 </span></div></td>
+			  <td><div align="right"><span class="style18"> 2,071 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Methyylation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Generally of N-terminal phenylalanine, side chain of lysine, arginine, histidine,  asparagine or glutamate, and C-terminal cysteine </span></td>
+              <td><div align="right"><span class="style18"> 613 </span></div></td>
+              <td><div align="right"><span class="style18"> 746 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Lipidation </span></div></td>
+              <td><span class="style18"> S-farnesyl cysteine, N-terminal myristoylation, Palmitoylation, GPI anchoring </span></td>
+              <td><div align="right"><span class="style18"> 520 </span></div></td>
+              <td><div align="right"><span class="style18"> 646 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Hydroxylation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Generally of asparagine, aspartate, proline or lysine </span></td>
+              <td><div align="right"><span class="style18"> 816 </span></div></td>
+              <td><div align="right"><span class="style18"> 1,033 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Dihydroxylation </span></div></td>
+              <td><span class="style18"> 3,4-dihydroxyarginine, 3,4-dihydroxyproline, 4,5-dihydroxylysine </span></td>
+              <td><div align="right"><span class="style18"> 180 </span></div></td>
+              <td><div align="right"><span class="style18"> 182 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Deamidation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Deamidated asparagin and Deamidated glutamine (needs to be followed by a G) </span></td>
+              <td><div align="right"><span class="style18"> 33 </span></div></td>
+              <td><div align="right"><span class="style18"> 38 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> S-Nitrosylation </span></div></td>
+              <td><span class="style18"> S-nitrosocysteine </span></td>
+              <td><div align="right"><span class="style18"> 5 </span></div></td>
+              <td><div align="right"><span class="style18"> 9 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Amidation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Generally at the C-terminal of a mature active peptide after oxidative cleavage of last glycine </span></td>
+              <td><div align="right"><span class="style18"> 1,554 </span></div></td>
+              <td><div align="right"><span class="style18"> 2,150 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Sulfation </span></div></td>
+              <td><span class="style18"> serine, threonine, and tyrosine </span></td>
+              <td><div align="right"><span class="style18"> 144 </span></div></td>
+              <td><div align="right"><span class="style18"> 165 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Sumoylation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> Glycyl lysine isopeptide (Lys-Gly)(interchain with G-Cter in SUMO) </span></td>
+              <td><div align="right"><span class="style18"> 22 </span></div></td>
+              <td><div align="right"><span class="style18"> 77 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Ubiquitylation </span></div></td>
+              <td><span class="style18"> Glycyl lysine isopeptide (Lys-Gly)(interchain with G-Cter in ubiquitin) </span></td>
+              <td><div align="right"><span class="style18"> 178 </span></div></td>
+              <td><div align="right"><span class="style18"> 286 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> ADP-ribosylation </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> ADP-ribosylarginine, ADP-ribosylasparagine, ADP-ribosylcysteine, ADP-ribosylserine </span></td>
+              <td><div align="right"><span class="style18"> 104 </span></div></td>
+              <td><div align="right"><span class="style18"> 3 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Pyrrolidone Carboxylic Acid </span></div></td>
+              <td><span class="style18"> N-terminal glutamine which has formed an internal cyclic lactam </span></td>
+              <td><div align="right"><span class="style18"> 567 </span></div></td>
+              <td><div align="right"><span class="style18"> 598 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Gamma-Carboxyglutamic Acid </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> 4-carboxyglutamate </span></td>
+              <td><div align="right"><span class="style18"> 343 </span></div></td>
+              <td><div align="right"><span class="style18"> 371 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> FAD </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> O-8alpha-FAD tyrosine, Pros-8alpha-FAD histidine, S-8alpha-FAD cysteine, and Tele-8alpha-FAD histidine </span></td>
+              <td><div align="right"><span class="style18"> 12 </span></div></td>
+              <td><div align="right"><span class="style18"> 12 </span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> Formylation </span></div></td>
+              <td><span class="style18"> Of the N-terminal methionine </span></td>
+              <td><div align="right"><span class="style18"> 35 </span></div></td>
+              <td><div align="right"><span class="style18"> 28 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18">Citrullination</span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18">Citrulline</span></td>
+              <td><div align="right"><span class="style18"> 7 </span></div></td>
+              <td><div align="right"><span class="style18"> 27</span></div></td>
+			  </tr>
+			<tr bgcolor="#E1FFE1">
+              <td bgcolor="#E1FFE1"><div align="center"><span class="style18"> S-diacylglycerol cysteine </span></div></td>
+              <td><span class="style18"> S-diacylglycerol cysteine </span></td>
+              <td><div align="right"><span class="style18"> 48 </span></div></td>
+              <td><div align="right"><span class="style18"> 36 </span></div></td>
+			  </tr>
+			<tr bgcolor="#D0FFFF">
+              <td bgcolor="#D0FFFF"><div align="center"><span class="style18"> Others </span></div></td>
+              <td bgcolor="#D0FFFF"><span class="style18"> - </span></td>
+              <td><div align="right"><span class="style18"> 328 </span></div></td>
+              <td><div align="right"><span class="style18"> 889 </span></div></td>
+			  </tr>
+			<tr bgcolor="#999999">
+              <td><div align="center" class="style19"> Total </div></td>
+              <td><span class="style19"> - </span></td>
+              <td><div align="right" class="style19"> 14,589 </div></td>
+              <td><div align="right" class="style19"> 36,466 </div></td>
+			  </tr>
+			</table>
+			
+			
+			<p>&nbsp;</p>
+          
+			
+          </td>
+        </tr>
+    </table>
+
+	</td>
+  </tr>
+</table>
+
+
+</div>
+
+<?php
+include("buttom.html");
+?>
+
+</div>
+</body>
+</html>

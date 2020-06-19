@@ -1,0 +1,13 @@
+blast-*/
+PDB/
+download/
+temp/
+KoolPHPSuite/
+data/
+rvp-net-v1-bin/
+predict_UbiSites/
+pathway/
+jmol*
+jsmol/
+cytoscape.js/
+

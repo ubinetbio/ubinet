@@ -1,0 +1,305 @@
+/*
+      Created by Keith Donegan of Code-Sucks.com
+	  
+	  E-Mail: Keithdonegan@gmail.com
+	  
+	  You can do whatever you want with these layouts,
+	  but it would be greatly appreciated if you gave a link
+	  back to http://www.code-sucks.com
+	  
+*/
+
+* { padding: 0; width:1150; margin: 0; }
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+ width:1150;
+ margin: 5px 0px 0px 10px;
+ font-size: 13px;
+ background-color: #CCC ; /*#EFEFEF;*/
+
+}
+
+#wrapper {
+ float: left;
+ width:100%;
+ background-color: #FFF ; /*#FFFFFF;*/
+ margin: auto;
+ /*width: 922px;*/
+}
+#faux {
+ /*background: url(faux-1-3-col.png);*/
+ /*margin-bottom: 10px;*/
+ margin: auto;
+ width:1150px;
+ overflow: auto; /* Paul O Brien Fix for IE www.pmob.co.uk */
+ width:100%;
+ min-height: 900px;
+ height: auto;
+}
+
+#header {
+ color: #333;
+ width: 1150px;
+ height: 90px;
+ margin: 5px 0px 5px 20px;
+ background:#999;
+}
+
+#navigation {
+ width: 1150px;
+ color: #333;
+ margin: 5px 0px 0px 10px;
+ height: 25px;
+}
+#navigation ul{
+	/* 去除條列符號 */
+	list-style-type:none; 
+	/* 去除UL預設的邊界和留白 */
+	margin:0;padding:0; 
+	/* 區塊元素裡面有浮動元素的話，區塊元素要設overflow:auto，它才會自動依照內容變化大小 */
+	overflow:auto;width:auto;
+}
+#navigation ul li{
+	/* 將LI元素預設的逐行排列，改成向左方浮動排列 */
+	float:left;
+}
+#navigation ul li a{
+	/* 這邊也要設float:left，不然沒有設定寬度的情況下，IE6會把它變成600px寬 */
+	float:left;
+	/* A標籤預設是inline元素，要改變它的大小必須要先改成block元素，改變它的大小是為了加大a:hover感應區，讓它更像按鈕而不是文字連結 */
+	display:block;
+	background-color: #666;
+	/* 我希望高度是30px，但是要減去margin和padding，所以25px才是應該設定的值 */
+	height:20px;
+	/* 設定左右10px留白，讓按鈕之間有間隔，還有上方5px留白，讓文字水平置中 */
+	padding:5px 10px 0 10px;
+	border-right-width: 2px;
+	border-right-style: dashed;
+	
+}
+/* 以下為美化用，非必需 */
+#navigation{
+	background: url(images/123.png);
+	font-family:'Tahoma';
+	font-size:13px;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+#navigation a{
+	color:#FFFFEB;
+	text-decoration:none;
+}
+#navigation a:link, #navigation a:visited{
+}
+#navigation a:active, #navigation a:hover{
+	background:#3333cc;
+	color:#efefff;
+}
+
+#content { 
+
+ float: left;
+ width:1150px%;
+ background-color: #FFF;
+ color: #333;
+ margin: 0 15px 0 15px;
+ /*margin: auto;*/
+ padding: 0px;
+ /*width: 902px;*/
+ height: auto;
+ min-height: 800px;
+ display: inline;
+ /*position: relative;*/
+}
+#footer { 
+	 width: 0 auto;
+	 background-color:#000000;
+	 clear: both;
+	 color: #333;
+	 margin: 10px 10px 5px 10px;
+	 background: #7BF;
+	 padding: 10px;
+}
+
+
+/*- Menu Tabs F--------------------------- */
+#tabsC
+	{
+		/*如果分頁要放置在頁面任意處,則以下三行勿省略*/
+		padding:0px;
+		/*margin:0px;*/
+		margin: auto;
+		width:100%;
+		/*若分頁是獨立頁面,可以自訂 tabsC 的 padding 值，並加clear屬性*/
+		/*clear:both*/
+		/*padding:12px;*/
+		border-left:#FFF 1px solid;
+		border-right:#666 1px solid;
+		border-bottom:#666 1px solid;
+		
+	}
+
+#tabsF
+	{
+		float:left;
+		width:100%;
+		margin:0;
+		padding:0;
+		font-size:13px;
+		line-height:normal;
+		border-left: #FFF 1px solid;
+		border-right:#FFF 1px solid;
+		border-bottom:0px solid #666;
+		background:url("images/tabBG.gif") repeat-x left bottom;
+		display:block;
+		
+		
+    }
+
+#tabsF ul
+	{
+		margin:0;
+		padding:10px 10px 0px 10px;
+		list-style:none;
+		
+    }
+
+#tabsF li
+	{
+		display:inline;
+		margin:0;
+		padding:0;
+		
+	}
+
+#tabsF a
+	{
+		float:left;
+		background:url("images/tableftF.gif") no-repeat left top;
+		margin:0;
+		padding:0px 0 0 4px;
+		text-decoration:none;
+		border-bottom:1px solid #666;
+	
+	}
+
+#tabsF a span
+	{
+		float:left;
+		display:block;
+		background:url("images/tabrightF.gif") no-repeat right top;
+		padding:9px 15px 5px 6px;
+		color:#666;
+	}
+
+#tabsF span
+	{
+	float:left;
+	background:url("images/tableftF.gif") no-repeat left top;
+	margin:1;
+	padding:4px 0 0 4px;
+	text-decoration:none;
+	}
+
+#tabsF span span
+	{
+	float:left;
+	display:block;
+	background:url("images/tabrightF.gif") no-repeat right top;
+	padding:9px 15px 5px 6px;
+	color:#666;
+	}
+	/* Commented Backslash Hack hides rule from IE5-Mac \*/
+
+	#tabsF a span {float:none;}
+	/* End IE5-Mac hack */
+	#tabsF a:hover span {
+			font-size::14;
+			font-style:italic;
+			font-weight:bold;
+      		color: #F00;
+		}
+#tabsF a:hover
+	{
+	
+	background-position:0% -42px;
+	
+	
+	}
+
+#tabsF a:hover span
+	{
+	
+	background-position:100% -42px;
+	
+	}
+
+	#tabsF #current a
+		{
+            background-position:0% -42px;
+			background-color: transparent;
+      		border-bottom:1px solid #FFF;
+			border-left: #999 1px solid;
+			border-top: #999 1px solid;
+			border-right:#999 1px solid;
+			color:#000;
+
+        }
+	#tabsF #current a span
+		{
+            background-position:100% -42px;
+            color:#F00;
+        }
+	#tabsF #current span span
+		{
+            background-position:100% -42px;
+      		border-bottom:1px solid #FFF;
+            color:#000;
+		}
+#table_info {
+	height: 30px;
+	float: left;
+	width: 725px;
+}
+#data {
+	float: left;
+	width: 725px;
+}
+
+.tInfo_1 {
+	background: #666;
+	color: #FFF;
+	float: left;
+	margin: 1px 0px auto 2px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+}
+
+.tInfo_2 {
+	background: #666;
+	color: #FFF;
+	float: left;
+	margin: 1px 0px auto 2px;
+	height: 30px;
+	line-height: 30px;
+	width: 300px;
+}
+
+.tInfo_last {
+	background: #666;
+	color: #FFF;
+	float: left;
+	margin: 1px 0px auto 2px;
+	height: 30px;
+	line-height: 30px;
+	width: 100px;
+}
+
+
+.clear { clear: both; background: none; border-top:#F00 }
+
+}
+
